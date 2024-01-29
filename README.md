@@ -1,8 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+First install the packages:
+
+```bash
+npm install
+```
+
+Second, run the development server:
 
 ```bash
 npm run dev
@@ -14,23 +18,17 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to open the project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Design feedback
+- Consistent paddings 4/8/12/16/20 or 6/12/18/24/30.
+- Include font files in design assets (Hard to find the design ones, so I have just used a google font).
+- The api does not include a poster, so keep that in mind when designing. (Now i changed the url to get a bigger format)
+- I prefer popups or new pages, instead of a changeable header on click. It looks nice, but just doesn't work clean UI wise.
+- In my daily user opinion the design is too dark, it might works nice on the design. But with different images it is a completely different story
+- The load more button styling is a bit weird in my opinion. It should be the same styling as the other button for consistency.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Architecture
+I would add a simple backend like firebase for example. This makes configuring a database and content fairly easy. 
+For this specific application I would use Vercel for deployment since it works easily with nextjs.
+Using version control and a system for tickets/pipelines/builds would be needed to collaborate on the project.
